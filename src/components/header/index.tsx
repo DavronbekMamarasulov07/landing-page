@@ -1,5 +1,4 @@
 import { RiMenu5Fill } from "react-icons/ri";
-import { toast } from "sonner";
 import Container from "../container";
 import { Button } from "../ui/button";
 import {
@@ -34,9 +33,7 @@ const Header = () => {
             </li>
 
             <li className="font-normal capitalize text-[#505F98] text-base relative group">
-              <a spellCheck href="#subscription">
-                Contact
-              </a>
+              Contact
               <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 block h-[1px] bg-[#505F98] w-0 group-hover:w-full transition-all duration-200"></span>
             </li>
           </ul>
@@ -44,27 +41,13 @@ const Header = () => {
             <a href="/">Landing</a>
           </h1>
           <Button
-            onClick={() => {
-              toast("Purchase Successful", {
-                style: {
-                  color: "#fff",
-                  backgroundColor: "#172047",
-                  border: "1px solid #111B47",
-                  padding: "20px",
-                },
-                description:
-                  "Your order has been placed successfully. Thank you for shopping with us!",
-                action: {
-                  label: "Undo",
-                  onClick: () => console.log("Undo Purchase"),
-                },
-                position: "top-center",
-              });
-            }}
+            onClick={() => {}}
             variant="default"
             className="lg:flex hidden bg-[#111B47] w-full h-0 max-w-[160px] py-4"
           >
-            Buy Now
+            <a spellCheck href="#subscription">
+              Buy Now
+            </a>
           </Button>
 
           <div className="lg:hidden block">

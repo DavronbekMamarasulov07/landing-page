@@ -31,7 +31,7 @@ const Footer = () => {
                   duration: 1500,
                 });
               }}
-              className="hidden md:block bg-[#111B47] w-full h-0 max-w-[160px] py-4 rounded-sm"
+              className="hidden md:flex bg-[#111B47] w-full h-0 max-w-[160px] py-4 rounded-sm"
             >
               Purchase Now
             </Button>
