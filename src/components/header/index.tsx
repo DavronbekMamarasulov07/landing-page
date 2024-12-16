@@ -86,21 +86,25 @@ const Header = () => {
                           onClick={closeSheet}
                           className="font-normal capitalize text-[#505F98] text-base relative group"
                         >
-                          Contact
+                          Contact1
                           <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 block h-[1px] bg-[#505F98] w-0 group-hover:w-full transition-all duration-200"></span>
                         </li>
                       </ul>
-                      <Button
-                        onClick={() => {
-                          closeSheet();
-                        }}
-                        variant="default"
-                        className="flex  bg-[#111B47] w-full h-0 max-w-[160px] py-4"
+                      <a
+                        spellCheck
+                        href="#subscription"
+                        className="w-full flex items-center justify-center"
                       >
-                        <a spellCheck href="#subscription">
+                        <Button
+                          onClick={() => {
+                            closeSheet();
+                          }}
+                          variant="default"
+                          className="flex  bg-[#111B47] w-full h-0 max-w-[160px] py-4"
+                        >
                           Buy Now
-                        </a>
-                      </Button>
+                        </Button>
+                      </a>
                     </div>
                   </SheetDescription>
                 </SheetHeader>
