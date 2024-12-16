@@ -6,7 +6,7 @@ import AOS from "aos";
 
 const Hero = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000 });
   }, []);
   return (
     <div className="w-full flex items-center justify-between hero ">
