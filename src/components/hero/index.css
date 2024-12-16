@@ -1,0 +1,16 @@
+.hero {
+  background-image: url("../../images/hero.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 900px;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    background-image: none;
+    background-color: #e7ecff;
+    height: auto;
+    min-height: 100vh;
+  }
+}

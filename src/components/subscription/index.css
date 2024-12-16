@@ -1,0 +1,14 @@
+.bg-image {
+  background-image: url("../../images/Rectangle.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  margin-bottom: -80px;
+}
+
+@media screen and (max-width: 1023px) {
+  .bg-image {
+    height: 700px;
+  }
+}
