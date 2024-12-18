@@ -9,7 +9,7 @@ const Intro = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div id="intro" className="w-full lg:py-[110px] py-[50px]">
+    <div id="intro" className="w-full lg:py-[110px] py-[50px] overflow-hidden">
       <Container>
         <div className="w-full flex flex-col lg:flex-row items-center justify-between  lg:gap-[30px] gap-[50px]  ">
           <div className="lg:hidden block" data-aos="fade-left">

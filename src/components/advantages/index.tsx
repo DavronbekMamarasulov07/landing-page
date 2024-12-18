@@ -9,7 +9,7 @@ const Advantages = () => {
   return (
     <div id="advantages">
       <Container>
-        <div className="flex flex-col gap-[30px]">
+        <div className="flex flex-col gap-[30px] overflow-hidden">
           <Card cardImage={card1} isButton={false} />
           <Card cardImage={card2} isButton={false} />
           <Card cardImage={card3} isButton={isButton} />
