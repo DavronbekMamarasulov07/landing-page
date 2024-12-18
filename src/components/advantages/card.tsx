@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Button } from "../ui/button";
 import AOS from "aos";
+import { toast } from "sonner";
 
 const Card = ({
   cardImage,
@@ -34,7 +35,28 @@ const Card = ({
         {isButton && (
           <div className="w-full flex items-center justify-center md:justify-start">
             {" "}
-            <Button className="bg-[#111B47] mt-[20px] w-full h-0 max-w-[160px] py-4 rounded-sm ">
+            <Button
+              onClick={() => {
+                toast("Purchase Successful", {
+                  style: {
+                    color: "#fff",
+                    backgroundColor: "#172047",
+                    border: "1px solid #111B47",
+                    padding: "20px",
+                  },
+                  description:
+                    "Your order has been placed successfully. Thank you for shopping with us!",
+                  action: {
+                    label: "Undo",
+                    onClick: () => console.log("Undo Purchase"),
+                  },
+                  position: "top-center",
+                  dismissible: true,
+                  duration: 1500,
+                });
+              }}
+              className="bg-[#111B47] mt-[20px] w-full h-0 max-w-[160px] py-4 rounded-sm "
+            >
               Purchase Now
             </Button>
           </div>
